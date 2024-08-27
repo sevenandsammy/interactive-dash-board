@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width;initial-scale:1.0">
+        <title>PUDDING</title>
+        <link rel="stylesheet" href="sam.css">
+
+
+    </head>
+    <body>
+        
+        <div class="hero">
+            <nav>
+                <h2 class="logo">CLOUD1</h2>
+                <ul>
+                    <li>
+                        <a href="#">
+                            HOME
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            PRODUCT
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            CONTACT
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">ADDRESS</a>
+
+                    </li>
+                    <li>
+                        <a href="#">ATTACK</a>
+                    </li>
+                    <button class="button">Subscribe</button>
+                </ul>
+                
+
+
+
+
+            </nav>
+
+            
+                
+            <div class="container">
+                
+
+                <div id="myPlot"  style="width:100%;max-width:300px; height:300px
+                ;padding-inline-start:5rem;display:inline-block; position:absolute;margin-left:10%;border-radius: 5px;
+                box-shadow: 0 0 16 rgba(0,0,0,0.8);background-position:center;background-size:cover;
+                ;"></div>
+
+                <canvas id="myChart" style="width:100%;max-width:300px;height:300px
+                ;padding-inline-start:5rem;display:inline-block; position:absolute;margin-left:40%;border-radius: 5px;
+                box-shadow: 0 0 16 rgba(0,0,0,0.8);background-position:center;background-size:cover;"></canvas>
+
+                <div id="myPlot1" style="width:100%;max-width:300px;height:300px;border-radius:50px;
+                ;padding-inline-start:5rem;display:inline-block; position:absolute;margin-left:60%;border-radius: 30px;
+                box-shadow: 0 0 16 rgba(0,0,0,0.8);background-position:center;background-size:center;"></div>
+
+                <canvas id="myChart1" style="width:100%;max-width:300px;height:300px;border-radius:50px;
+                ;display:flex;flex-direction:column;justify-content:space-evenly;position:absolute;margin-top:30%;border-radius: 30px;margin-left:14%;
+                background-color:white;box-shadow: 0 0 16 rgba(0,0,0,0.8);background-position:center;background-size:center;align-items:center"></canvas>
+
+                <canvas id="myChart4" style="width:100%;max-width:300px;height:300px;border-radius:50px;
+                ;display:flex;flex-direction:column;justify-content:space-evenly;position:absolute;margin-top:30%;border-radius: 30px;margin-left:40%;
+                background-color:white;box-shadow: 0 0 16 rgba(0,0,0,0.8);background-position:center;background-size:center;align-items:center"></canvas>
+
+                <canvas id="myChart7" style="width:100%;max-width:500px ;height:300px;border-radius:50px;
+                ;display:flex;flex-direction:column;justify-content:space-evenly;position:absolute;margin-top:30%;border-radius: 30px;margin-left:60%;
+                background-color:white;box-shadow: 0 0 16 rgba(0,0,0,0.8);background-position:center;background-size:center;align-items:center "></canvas>
+
+
+               
+
+
+
+            </div>
+            <div class="akane">
+                <div class="akanechi">
+                    <h1 style="display:flex;flex-direction:column;text-align:center;margin-top:60%;font-weight:600;font-size:72px;">LINEAR REGRESSION</h1>
+                </div>
+                <div  class="kurokawa">
+                    <p style="display:flex;flex-direction:column;text-align:center;margin-bottom:20%;font-weight:300;font-size:20px;">AND ITS USE IN HERE</p>
+                </div>
+                <div class="robin">
+                    <div class="heck" ><img src="download.png" style="display:flex;flex-direction:column;margin-left:30%;width:50%;height:50vh;align-items:center;margin-bottom:50%;translate:-50% -50%;border-radius:20px;"></div>
+                </div>
+                <div class="ponky">
+                    <div class="bina"  >
+                        <h1 class="huh" style="display:flex;flex-direction:row;margin-top:30%;font-size:30px;font-weight:100px;margin-left:60%;translate:0% -1300px ;font-family: Georgia, 'Times New Roman', Times, serif;">WHAT IS LINEAR REGRESSION ?</h1>
+                        <p  class="bh" style="display:flex;flex-direction:row;;margin-top:50%;font-size:30px;font-weight:100px;margin-left:60%;translate:0% -2050px ;font-family: Verdana, Geneva, Tahoma, sans-serif;background-color:black;color:white">Linear regression is a type of supervised machine learning algorithm that computes the linear relationship between the dependent variable and one or more independent features by fitting a linear equation to observed data.
+
+                        When there is only one independent feature, it is known as Simple Linear Regression, and when there are more than one feature, it is known as Multiple Linear Regression.
+                        
+                        Similarly, when there is only one dependent variable, it is considered Univariate Linear Regression, while when there are more than one dependent variables, it is known as Multivariate Regression.</p></div>
+
+                </div>
+                
+                
+
+            </div>
+             
+        
+            
+            <script>
+
+                
+
+              const xArray = [55, 49, 44, 24, 15];
+                const yArray = ["Italy ", "France ", "Spain ", "USA ", "Argentina "];
+
+                const data = [{
+                    x:xArray,
+                    y:yArray,
+                    type:"bar",
+                    orientation:"h",
+                    marker: {color:"rgba(255,0,0,0.6)"}
+                    }];
+
+                const layout = {title:"World Wide Wine Production"};
+
+                Plotly.newPlot("myPlot", data, layout);
+            </script>
+            <script>
+                const xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+                const yValues = [55, 49, 44, 24, 15];
+                const barColors = ["red", "green","blue","orange","brown"];
+                
+                new Chart("myChart", {
+                  type: "bar",
+                  data: {
+                    labels: xValues,
+                    datasets: [{
+                      backgroundColor: barColors,
+                      data: yValues
+                    }]
+                  },
+                  options: {
+                    legend: {display: false},
+                    title: {
+                      display: true,
+                      text: "World Wine Production 2018"
+                    }
+                  }
+                });
+            </script> 
+            <script>
+                const xArray1 = ["Italy", "France", "Spain", "USA", "Argentina"];
+                const yArray1 = [55, 49, 44, 24, 15];
+                
+                const layout1 = {title:"World Wide Wine Production"};
+                
+                const data1 = [{labels:xArray1, values:yArray1, hole:.4, type:"pie"}];
+                
+                Plotly.newPlot("myPlot1", data1, layout1);
+            </script>
+            <script>
+                const xyValues = [
+                  {x:50, y:7},
+                  {x:60, y:8},
+                  {x:70, y:8},
+                  {x:80, y:9},
+                  {x:90, y:9},
+                  {x:100, y:9},
+                  {x:110, y:10},
+                  {x:120, y:11},
+                  {x:130, y:14},
+                  {x:140, y:14},
+                  {x:150, y:15}
+                ];
+                
+                new Chart("myChart1", {
+                  type: "scatter",
+                  data: {
+                    datasets: [{
+                      pointRadius: 4,
+                      pointBackgroundColor: "rgb(0,0,255)",
+                      data: xyValues
+                    }]
+                  },
+                  options: {
+                    legend: {display: false},
+                    scales: {
+                      xAxes: [{ticks: {min: 40, max:160}}],
+                      yAxes: [{ticks: {min: 6, max:16}}],
+                    }
+                  }
+                });
+
+                
+            </script>
+            <script>
+                const xValues2 = [100,200,300,400,500,600,700,800,900,1000];
+                
+                new Chart("myChart4", {
+                  type: "line",
+                  data: {
+                    labels: xValues2,
+                    datasets: [{ 
+                      data: [860,1140,1060,1060,1070,1110,1330,2210,7830,2478],
+                      borderColor: "red",
+                      fill: false
+                    }, { 
+                      data: [1600,1700,1700,1900,2000,2700,4000,5000,6000,7000],
+                      borderColor: "green",
+                      fill: false
+                    }, { 
+                      data: [300,700,2000,5000,6000,4000,2000,1000,200,100],
+                      borderColor: "blue",
+                      fill: false
+                    }]
+                  },
+                  options: {
+                    legend: {display: false}
+                  }
+                });
+                </script>
+               
+
+                <script>
+                const xValues5 = [];
+                const yValues2 = [];
+                generateData("Math.sin(x)", 0, 10, 0.5);
+                
+                new Chart("myChart7", {
+                  type: "line",
+                  data: {
+                    labels: xValues5,
+                    datasets: [{
+                      fill: false,
+                      pointRadius: 2,
+                      borderColor: "rgba(0,0,255,0.5)",
+                      data: yValues2
+                    }]
+                  },    
+                  options: {
+                    legend: {display: false},
+                    title: {
+                      display: true,
+                      text: "y = sin(x)",
+                      fontSize: 16
+                    }
+                  }
+                });
+                function generateData(value, i1, i2, step = 1) {
+                  for (let x = i1; x <= i2; x += step) {
+                    yValues2.push(eval(value));
+                    xValues5.push(x);
+                  }
+                }
+                </script>
+            <div class="sami1">
+                
+
+            </div>
+            
+            
+        
+            <div class="header" style="transition:width 0.5s">
+                
+                <div class="you">
+                        <div class="side-bar" style="width:100%;height:100vh;padding-inline-start:5rem;display:inline-block;position:absolute">
+                            <div  class="user" style="width:110px;height:100%;position:fixed;top:0;left:0;
+                            padding:30px 30px;background-color:rgba(255,255,255,0.2);backdrop-filter:blur(5px);display:flex;justify-content:space-between;flex-direction:column;overflow:hidden">
+                                <div class="sami" style="display:flex-column;align-items:center;justify-content:space-around;width:60px
+                                ;padding:10px;border-radius:8px;font-size:12px;">
+
+                            
+                                    <img src="th.jpeg" class="user-img" style="width:100%;border-radius:50%;display:inline-block">
+                                    <div class="seven" style="font-size:12px;white-space:nowrap;margin:0%;display:inline-block;">
+                                        <h6 class="samy" style="font-size:15px;font-weight:600;white-space:nowrap;display:flex-start;margin:0% ;display:inline-block;margin-right:20px; translate:-40% 0%;
+                                        justify-content:center;cursor:pointer">sammy@
+                                        <br>gmail.com</h2>
+                                        <p style="display:inline-block;translate:-50% 0% ">78787sammy..</p>
+                                    </div>
+                                    <div class="images">  
+                                        <ul>
+                                            <li><img src="images/reports.png"><p>sammy</p></li>
+                                            <li><img src="images/setting.png"><p>sammy2</p></li>
+                                            <li><img src="images/projects.png"><p>sammy3</p></li>
+                                            <li><img src="images/messages.png"><p>sammy4</p></li>
+                                            <li><img src="images/rewards.png"><p>sammy5</p></li>
+
+                                        </ul>
+
+                                    
+                                    </div>
+                                    <ul>
+                                        <li><img src="images/logout.png">
+                                        <p>sammy 6</p>
+                                        </li>
+                                    </ul>
+                                </div>    
+
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>     
+        </div>     
+
+
+
+
+
+
+
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+</html>
